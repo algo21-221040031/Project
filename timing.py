@@ -78,7 +78,7 @@ def is_k_down_break_ma10(code, _date):
     :param _date: 日期
     :return: True/False
     """
-    # 从后复权的日行情数据集中根据股票代码、日期和是否为正常交易的条件查询一条数据，
+    # 从日行情数据集中根据股票代码、日期和是否为正常交易的条件查询一条数据，
     # 如果能找到数据，则认为当日股票是正常交易状态，否则为停牌
     current_daily = DB_CONN['daily'].find_one(
         {'code': code, 'date': _date})
@@ -88,7 +88,7 @@ def is_k_down_break_ma10(code, _date):
         print('计算信号，K线下穿MA10，当日没有K线，股票 %s，日期：%s' % (code, _date), flush=True)
         return False
 
-    # 从后复权的日行情数据集中查询是11条数据，因为要计算连着两个交易日的10日均线价格，所以是需要11条数据。
+    # 从日行情数据集中查询是11条数据，因为要计算连着两个交易日的10日均线价格，所以是需要11条数据。
     # 才能保证取到的是邻近的10个交易日的数据。
     daily_cursor = DB_CONN['daily'].find(
         {'code': code, 'date': {'$lte': _date}},
