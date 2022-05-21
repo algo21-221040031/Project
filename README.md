@@ -18,4 +18,13 @@ Our project is a digital currency backtesting system based on the moving average
     3. evaluate.py: containing the class Evaluate, which used to compute the drawdown, annual_profit, and the sharpe ratio.
 * The File "main.py": run this file it will automatically do the backtesting of the strategy.
 
+## Class Description
+* dailycrowler: This class gives other classes an interface for providing market data to the remaining components with the system, which connects the exchange and the local MongoDB;
+* trade: This class generates the trading signal and finish the execution, and gets data from class DailyCrawler and calls the function from Timing;
+* evaluate: This class measures the performance of the strategy.
 
+## Result Analysis
+* The net value is:
+ <div align=left>
+  <img src="[https://user-images.githubusercontent.com/101002984/167990098-754c87bf-5c16-4566-a106-66b0af9b8f10.png](https://user-images.githubusercontent.com/101002984/169658215-0870d05f-7a0c-490b-9bc9-e39dbc177983.png)" />
+  </div>
