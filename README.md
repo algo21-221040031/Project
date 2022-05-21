@@ -29,8 +29,9 @@ Our project is a digital currency backtesting system based on the moving average
   <img src="https://user-images.githubusercontent.com/101002984/169658215-0870d05f-7a0c-490b-9bc9-e39dbc177983.png" />
   </div>
 * The performance matrix is:
+  -------- | :-----------:
  Date Interval      | 20210101-2021-1230  
- -------- | :-----------:
+  -------- | :-----------:
  Annual yield rate     | 26.160%
   -------- | :-----------:
 Maximum Drawdown    | 0.033
