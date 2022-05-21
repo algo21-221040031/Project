@@ -71,7 +71,7 @@ class Trade:
                     projection={'Open': True, 'code': True}
                 )
 
-                # 一只货币一只货币处理
+                # 一个货币一个货币处理
                 for sell_daily in sell_daily_cursor:
                     # 待卖货币的简称
                     code = sell_daily['code']
