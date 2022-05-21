@@ -10,6 +10,12 @@ Our project is a digital currency backtesting system based on the moving average
 ## Files Description
 * Folder "backtest": containing all the coding .py files;
   * Folder "data":
-    1. database.py: construct a database in local MongoDB
-* Folder "data": containing all the data required, the price of stock option of JP Morgan;
-* Folder "result": containing the output figures.
+    1. database.py: construct a database in local MongoDB;
+    2. daily_crawler: containing the class DailyCrowler, which captures the data from the exchange to local database.
+  * Folder "trader":
+    1. timing.py: containing the three MA10 strategies functions, which the execute the main strategy;
+    2. trade.py: containing the class Trade, which contains the heart backtest(self), that automatically do the backtesting of the strategy;
+    3. evaluate.py: containing the class Evaluate, which used to compute the drawdown, annual_profit, and the sharpe ratio.
+* The File "main.py": run this file it will automatically do the backtesting of the strategy.
+
+
