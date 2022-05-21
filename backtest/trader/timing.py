@@ -51,7 +51,6 @@ def is_k_up_break_ma10(code, _date):
     # 计算当前交易日收盘价和MA10的关系；
     current_close_2_current_ma10 = compare_close_2_ma_10(dailies[1:])
 
-    # 将关键数据打印出来，以便于比对；
     print('计算信号，K线上穿MA10，数字货币：%s，日期：%s， 前一日 %s，当日：%s' %
           (code, _date, str(last_close_2_last_ma10), str(current_close_2_current_ma10)), flush=True)
 
