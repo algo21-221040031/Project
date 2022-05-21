@@ -15,7 +15,6 @@ class Evaluate:
         max_drawdown = 0
         size = len(self.net_values)
         index = 0
-        # 双层循环找出最大回撤
         for net_value in self.net_values:
             # 计算从当前开始直到结束，和当前净值相比的最大回撤
             for sub_net_value in self.net_values[index:]:
