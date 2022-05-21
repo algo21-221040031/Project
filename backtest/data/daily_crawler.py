@@ -71,7 +71,6 @@ class DailyCrawler:
         end_date = '2021-10-30T00:00:00.000Z'
         """
         
-        #codes = list(stock_df)
         codes = ['BTC/USDT','ETH/USDT','LUNA/USDT','TRX/USDT']
 
         # 当前日期
