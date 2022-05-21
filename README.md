@@ -26,5 +26,5 @@ Our project is a digital currency backtesting system based on the moving average
 ## Result Analysis
 * The net value is:
  <div align=left>
-  <img src="[https://user-images.githubusercontent.com/101002984/167990098-754c87bf-5c16-4566-a106-66b0af9b8f10.png](https://user-images.githubusercontent.com/101002984/169658215-0870d05f-7a0c-490b-9bc9-e39dbc177983.png)" />
+  <img src="https://user-images.githubusercontent.com/101002984/169658215-0870d05f-7a0c-490b-9bc9-e39dbc177983.png" />
   </div>
