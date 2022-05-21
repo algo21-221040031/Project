@@ -11,9 +11,6 @@ begin_date = '2021-01-01T16:00:00.000Z'
 end_date = '2021-12-30T16:00:00.000Z' 
 this_phase_codes = ['BTC/USDT', 'ETH/USDT', 'LUNA/USDT', 'TRX/USDT']
 
-#dc = DailyCrawler()
-#dc.crawl(begin_date, end_date)
-
 trade =  Trade(
             cash=cash, 
             single_position=single_position, 
