@@ -30,10 +30,10 @@ Our project is a digital currency backtesting system based on the moving average
   </div>
 * The performance matrix is:
   -------- | :-----------:
- Date Interval      | 20210101-2021-1230  
+ Date Interval| 20210101-2021-1230  
   -------- | :-----------:
- Annual yield rate     | 26.160%
+ Annual yield rate| 26.160%
   -------- | :-----------:
-Maximum Drawdown    | 0.033
+Maximum Drawdown| 0.033
   -------- | :-----------:
  Sharpe Ratio| 1.97
